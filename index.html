@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Fabián Ceferino González Monier - Desarrollador Full Stack">
+    <title>Fabián Ceferino González Monier | Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header con Navegación Responsiva -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#home">
+                    <span class="logo-text">Fabian</span>
+                    <span class="logo-accent">Ceferino Gonzalez</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">
+                            <i class="fas fa-home"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fas fa-user"></i>
+                            <span>Sobre Mí</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Educación</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-code"></i>
+                            <span>Tecnologías</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="fas fa-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home section" id="home">
+        <div class="home__container container">
+            <div class="home__content">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Hola, soy <span class="title-accent">Fabian Ceferino Gonzalez</span>
+                    </h1>
+                    <h2 class="home__subtitle">Desarrollador Full Stack</h2>
+                    <p class="home__description">
+                        Apasionado por la tecnología y orientado al detalle, especializado en crear 
+                        soluciones eficientes con Java, C#, .NET, Angular, React y Node.js
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button button--primary">
+                            <i class="fas fa-envelope"></i>
+                            Contáctame
+                        </a>
+                        <a href="CV_Fabian_Gonzalez/SP_CV_FABIAN_CEFERINO_GONZALEZ.pdf" download class="button button--secondary">
+                            <i class="fas fa-download"></i>
+                            CV Español
+                        </a>
+                        <a href="CV_Fabian_Gonzalez/EN_CV_FABIAN_CEFERINO_GONZALEZ.pdf" download class="button button--secondary">
+                            <i class="fas fa-download"></i>
+                            CV English
+                        </a>
+                    </div>
+                    <div class="home__social">
+                        <a href="https://github.com/fabiancgonzalez" target="_blank" class="home__social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/fabiangonzalezmonier" target="_blank" class="home__social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/5493513729188" target="_blank" class="home__social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:ceferinomonier@gmail.com" class="home__social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__img">
+                    <div class="home__blob">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ff6b35" d="M47.1,-57.1C59.9,-45.8,68.5,-29.2,71.3,-11.8C74.1,5.6,71.1,23.8,62.3,38.9C53.5,54,38.9,66,22.4,71.3C5.9,76.6,-12.5,75.2,-28.7,68.8C-44.9,62.4,-58.9,51,-67.1,36.1C-75.3,21.2,-77.7,2.8,-74.4,-14.3C-71.1,-31.4,-62.1,-47.2,-48.8,-58.3C-35.5,-69.4,-17.7,-75.8,0.2,-76C18.1,-76.2,36.2,-70.3,47.1,-57.1Z" transform="translate(100 100)" />
+                        </svg>
+                        <i class="fas fa-laptop-code home__blob-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button">
+                    <i class="fas fa-mouse"></i>
+                    <span class="home__scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section__title">Sobre Mí</h2>
+            <span class="section__subtitle">Mi Introducción</span>
+
+            <div class="about__container">
+                <div class="about__data">
+                    <p class="about__description">
+                        Soy una persona apasionada por la tecnología y orientada al detalle, en pleno camino de 
+                        desarrollo como programador fullstack. Cuento con una sólida base técnica gracias a mi 
+                        <strong>Tecnicatura en Programación</strong> cursada en la <strong>Universidad Tecnológica Nacional</strong>.
+                    </p>
+                    <p class="about__description">
+                        Durante mi formación, desarrollé diversos proyectos académicos que me permitieron aplicar de 
+                        manera práctica mis conocimientos en <strong>Java (Eclipse, NetBeans)</strong>, <strong>C#</strong>, 
+                        <strong>.NET (WinForms, WebAPI, WCF)</strong> y <strong>SQL Server</strong>.
+                    </p>
+                    <p class="about__description">
+                        Además, complementé mi aprendizaje con cursos especializados en <strong>Angular</strong>, 
+                        <strong>React</strong> y <strong>Node.js</strong>, lo que fortaleció mis habilidades en desarrollo 
+                        web moderno. Me motiva seguir creciendo profesionalmente, aprender nuevas tecnologías y aportar 
+                        valor mediante soluciones eficientes, bien diseñadas y orientadas a resultados.
+                    </p>
+
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="fas fa-award"></i>
+                            <h3 class="about__box-title">9+</h3>
+                            <span class="about__box-subtitle">Diplomas & Certificaciones</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="fas fa-briefcase"></i>
+                            <h3 class="about__box-title">10+</h3>
+                            <span class="about__box-subtitle">Proyectos Completados</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="fas fa-code"></i>
+                            <h3 class="about__box-title">15+</h3>
+                            <span class="about__box-subtitle">Tecnologías Dominadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section__title">Educación</h2>
+            <span class="section__subtitle">Mi Formación Académica</span>
+
+            <div class="education__container">
+                <div class="education__card">
+                    <div class="education__icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education__content">
+                        <h3 class="education__title">Tecnicatura en Programación</h3>
+                        <span class="education__institution">Universidad Tecnológica Nacional (UTN)</span>
+                        <p class="education__description">
+                            Formación sólida en fundamentos de programación, desarrollo de software, 
+                            bases de datos y arquitectura de sistemas. Proyectos prácticos con Java, C#, .NET y SQL Server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diplomas Section -->
+    <section class="diplomas section">
+        <div class="container">
+            <h2 class="section__title">Diplomas & Certificaciones</h2>
+            <span class="section__subtitle">Mi Desarrollo Profesional</span>
+
+            <div class="diplomas__container">
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3 class="diploma__title">Angular</h3>
+                    <p class="diploma__description">Framework frontend moderno</p>
+                    <a href="DiplomasObtenidos/Certificado Angular.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="diploma__title">React JS</h3>
+                    <p class="diploma__description">Biblioteca JavaScript para UI</p>
+                    <a href="DiplomasObtenidos/Certificado React JS.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="diploma__title">Node.js</h3>
+                    <p class="diploma__description">Entorno de ejecución JavaScript</p>
+                    <a href="DiplomasObtenidos/Certificado Node JS.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3 class="diploma__title">.NET Framework</h3>
+                    <p class="diploma__description">Desarrollo con Microsoft .NET</p>
+                    <a href="DiplomasObtenidos/.NET GONZALEZ_FABIAN_CEFERINO.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="diploma__title">SQL Server</h3>
+                    <p class="diploma__description">Gestión de bases de datos</p>
+                    <a href="DiplomasObtenidos/DIPLOMA SQL SERVER, VISUAL STUDIO 2006.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="diploma__title">Full-Stack Developer</h3>
+                    <p class="diploma__description">Desarrollo integral profesional</p>
+                    <a href="DiplomasObtenidos/Certificado Full-Stack Developer Profesional.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="diploma__title">Python</h3>
+                    <p class="diploma__description">Práctica de programación Python</p>
+                    <a href="DiplomasObtenidos/Práctica de python.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="diploma__title">QA Automation</h3>
+                    <p class="diploma__description">Testing automatizado</p>
+                    <a href="DiplomasObtenidos/QA AUTOMATION FABIAN GONZÁLEZ.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+
+                <div class="diploma__card">
+                    <div class="diploma__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="diploma__title">Técnico en Programación</h3>
+                    <p class="diploma__description">Universidad Tecnológica Nacional</p>
+                    <a href="DiplomasObtenidos/UTN_TecnicoProgramacion.pdf" target="_blank" class="diploma__link">
+                        <i class="fas fa-external-link-alt"></i> Ver Certificado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section__title">Tecnologías</h2>
+            <span class="section__subtitle">Stack Tecnológico</span>
+
+            <div class="skills__container">
+                <!-- Frontend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fab fa-angular"></i>
+                                <div>
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-react"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-html5"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML5</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-css3-alt"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS3</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-js"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="fas fa-server"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fab fa-java"></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-microsoft"></i>
+                                <div>
+                                    <h3 class="skills__name">C# / .NET</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-node-js"></i>
+                                <div>
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fas fa-cog"></i>
+                                <div>
+                                    <h3 class="skills__name">Web API</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fas fa-network-wired"></i>
+                                <div>
+                                    <h3 class="skills__name">WCF</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="fas fa-database"></i>
+                        Database & Tools
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fas fa-database"></i>
+                                <div>
+                                    <h3 class="skills__name">SQL Server</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-git-alt"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fas fa-code-branch"></i>
+                                <div>
+                                    <h3 class="skills__name">Visual Studio</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fab fa-python"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fas fa-vial"></i>
+                                <div>
+                                    <h3 class="skills__name">QA Automation</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section__title">Proyectos</h2>
+            <span class="section__subtitle">Mi Trabajo Reciente</span>
+
+            <div class="projects__container">
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-shopping-cart project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">E-Commerce Full Stack</h3>
+                        <p class="project__description">
+                            Aplicación de comercio electrónico completa con Angular en frontend, 
+                            Node.js + Express en backend y SQL Server para gestión de datos.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">SQL Server</span>
+                        </div>
+                        <a href="https://github.com/fabiancgonzalez/TiendasFernandez" target="_blank" class="project__link">
+                            <i class="fab fa-github"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-tasks project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Sistema de Gestión</h3>
+                        <p class="project__description">
+                            Sistema de gestión empresarial desarrollado con C# .NET WinForms, 
+                            implementando patrones de diseño y arquitectura en capas.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">WinForms</span>
+                        </div>
+                        <a href="https://github.com/fabiancgonzalez" target="_blank" class="project__link">
+                            <i class="fab fa-github"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-cloud project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">RESTful API</h3>
+                        <p class="project__description">
+                            API REST desarrollada con .NET Web API, implementando autenticación JWT, 
+                            validaciones y documentación con Swagger.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">.NET</span>
+                            <span class="tag">Web API</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                        <a href="https://github.com/fabiancgonzalez" target="_blank" class="project__link">
+                            <i class="fab fa-github"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project__card">
+                    <div class="project__img">
+                        <i class="fas fa-mobile-alt project__icon"></i>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">App React Responsive</h3>
+                        <p class="project__description">
+                            Aplicación web responsive con React, Redux para manejo de estado, 
+                            y consumo de APIs externas con Axios.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="https://github.com/fabiancgonzalez" target="_blank" class="project__link">
+                            <i class="fab fa-github"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__button">
+                <a href="https://github.com/fabiancgonzalez" target="_blank" class="button button--primary">
+                    <i class="fab fa-github"></i>
+                    Ver Más Proyectos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <span class="section__subtitle">Ponte en Contacto</span>
+
+            <div class="contact__container">
+                <div class="contact__content">
+                    <h3 class="contact__title">Hablemos de tu próximo proyecto</h3>
+                    <p class="contact__description">
+                        Estoy disponible para oportunidades freelance o posiciones full-time. 
+                        ¿Tienes un proyecto en mente? ¡Hablemos!
+                    </p>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">ceferinomonier@gmail.com</span>
+                            <a href="mailto:ceferinomonier@gmail.com" class="contact__button">
+                                Enviar Email <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+54 9 351 372-9188</span>
+                            <a href="https://wa.me/5493513729188" target="_blank" class="contact__button">
+                                Enviar Mensaje <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fab fa-linkedin"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">Fabián Ceferino Gonzalez</span>
+                            <a href="https://linkedin.com/in/fabiangonzalezmonier" target="_blank" class="contact__button">
+                                Ver Perfil <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fab fa-github"></i>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">fabiancgonzalez</span>
+                            <a href="https://github.com/fabiancgonzalez" target="_blank" class="contact__button">
+                                Ver Repositorios <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fas fa-download"></i>
+                            <h3 class="contact__card-title">Curriculum Vitae</h3>
+                            <span class="contact__card-data">Descarga mi CV en español o inglés</span>
+                            <a href="CV_Fabian_Gonzalez/SP_CV_FABIAN_CEFERINO_GONZALEZ.pdf" download class="contact__button">
+                                CV Español <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="CV_Fabian_Gonzalez/EN_CV_FABIAN_CEFERINO_GONZALEZ.pdf" download class="contact__button" style="margin-top: 0.5rem;">
+                                CV English <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Fabian Ceferino Gonzalez</h1>
+            <p class="footer__description">Desarrollador Full Stack</p>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">Sobre Mí</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Tecnologías</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Proyectos</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://github.com/fabiancgonzalez" target="_blank" class="footer__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/fabiangonzalezmonier" target="_blank" class="footer__social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/5493513729188" target="_blank" class="footer__social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:ceferinomonier@gmail.com" class="footer__social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &#169; 2025 Fabian Ceferino Gonzalez. Todos los derechos reservados.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
