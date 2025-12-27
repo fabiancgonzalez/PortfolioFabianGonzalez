@@ -731,9 +731,39 @@ button {
     transform: translateX(5px);
 }
 
+/* Project - Finances specific styles */
+:root {
+    --finances-color: #28a745;
+    --finances-alt: #20c997;
+}
+
+.project__card--finanzas .project__img {
+    background: linear-gradient(135deg, var(--finances-color), var(--finances-alt));
+}
+
+.project__card--finanzas .project__icon {
+    color: #fff;
+}
+
+.project__card--finanzas .tag {
+    background-color: rgba(40,167,69,0.12);
+    color: var(--finances-color);
+    border-color: rgba(40,167,69,0.25);
+}
+
+.project__card--finanzas:hover {
+    border-color: var(--finances-color);
+    box-shadow: 0 15px 40px rgba(40,167,69,0.12);
+    transform: translateY(-10px);
+}
+
+.project__card--finanzas .project__title {
+    color: var(--finances-alt);
+}
+
 .projects__button {
     text-align: center;
-}
+} 
 
 /* =========== CONTACT SECTION =========== */
 .contact__container {
