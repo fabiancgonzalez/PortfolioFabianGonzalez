@@ -423,6 +423,14 @@ button {
     font-size: var(--normal-font-size);
 }
 
+.about__description strong {
+    color: var(--primary-color);
+    font-weight: var(--font-semibold);
+    background: linear-gradient(180deg, transparent 55%, rgba(255, 107, 53, 0.18) 55%);
+    padding: 0 0.2rem;
+    border-radius: 0.2rem;
+}
+
 .about__info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
