@@ -841,6 +841,26 @@ button {
     color: #86efac;
 }
 
+.project__card--aliadaa .project__img {
+    background: linear-gradient(135deg, #d66a1f, #f59e0b);
+}
+
+.project__card--aliadaa .tag {
+    background-color: rgba(214, 106, 31, 0.14);
+    color: #f7b267;
+    border-color: rgba(247, 178, 103, 0.35);
+}
+
+.project__card--aliadaa:hover {
+    border-color: #d66a1f;
+    box-shadow: 0 15px 40px rgba(214, 106, 31, 0.18);
+}
+
+.project__card--aliadaa .project__title,
+.project__card--aliadaa .project__link {
+    color: #f7b267;
+}
+
 .project__card--store .project__img {
     background: linear-gradient(135deg, #f97316, #ef4444);
 }
