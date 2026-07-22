@@ -264,13 +264,16 @@ const applyLanguage = (lang) => {
     setText('.why .section__subtitle', isEnglish ? 'Technical experience focused on business impact.' : 'Experiencia técnica con foco en impacto de negocio.');
     setTextAt(document.querySelectorAll('.metric-card strong'), 0, isEnglish ? '+15 suppliers' : '+15 proveedores');
     setTextAt(document.querySelectorAll('.metric-card span'), 0, isEnglish ? 'managed in critical inventory and supply chain systems.' : 'gestionados en sistemas críticos de inventario y cadena de suministro.');
-    setTextAt(document.querySelectorAll('.metric-card strong'), 1, isEnglish ? '95% ISO 9002' : '95% ISO 9002');
+    setTextAt(document.querySelectorAll('.metric-card strong'), 1, isEnglish ? '95% Quality Standards' : '95% Normas de Calidad');
     setTextAt(document.querySelectorAll('.metric-card span'), 1, isEnglish ? 'compliance with international quality standards.' : 'cumplimiento con estándares internacionales de calidad.');
     setTextAt(document.querySelectorAll('.metric-card strong'), 2, isEnglish ? 'Fewer discrepancies' : 'Menos discrepancias');
     setTextAt(document.querySelectorAll('.metric-card span'), 2, isEnglish ? 'reduction proven with data analysis and custom reports.' : 'reducción comprobada mediante analítica de datos y reportes personalizados.');
     setText('.why__label', isEnglish ? 'Positioning' : 'Posicionamiento');
-    setText('.why__card h3', isEnglish ? 'One goal: make your software generate revenue or save money.' : 'Una sola meta: que tu software mueva ingresos o ahorre dinero.');
-    setText('.why__card p', isEnglish ? 'I work the solution from the business to the interface, not the other way around. That speeds decisions, reduces rework and improves product adoption.' : 'Trabajo la solución desde el negocio hacia la interfaz, no al revés. Eso acelera decisiones, reduce retrabajo y mejora la adopción del producto.');
+    setText('.why__card h3', isEnglish ? 'One goal: make your software generate revenue or save money.' : 'El objetivo: que tu software mueva ingresos o ahorre dinero.');
+    setText('.why__card p', isEnglish ? 
+      'Business strategy drives my design. Less rework, faster decisions, better product adoption.' : 
+      'El negocio guía mi diseño. Decisiones rápidas y mejor adopción del producto.'
+    );
     setText('#open-certificates', isEnglish ? 'View technical certifications' : 'Ver certificaciones técnicas');
 
     setText('.contact .section__eyebrow', isEnglish ? 'Contact' : 'Contacto');

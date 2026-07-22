@@ -43,7 +43,7 @@ D. SECCIÓN "POR QUÉ TRABAJAR CONMIGO" (Reemplaza a "Sobre mí" y "Certificados
 - Reduce la visibilidad de la lista masiva de diplomas y certificados técnicos a un pequeño botón secundario o modal desplegable ("Ver certificaciones técnicas").
 - Destaca en tarjetas grandes mis métricas reales de impacto de negocio:
   * "+25 proveedores clave gestionados en sistemas críticos de inventario y cadena de suministro."
-  * "95% de cumplimiento con estándares internacionales de calidad (ISO 9002)."
+  * "95% de cumplimiento con estándares internacionales de calidad (Normas de Calidad)."
   * "Reducción comprobada de discrepancias de stock mediante analítica de datos."
 
 E. SECCIÓN DE CONTACTO Y CIERRE
