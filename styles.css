@@ -1058,6 +1058,29 @@ body.lang-en .language-toggle__label--right {
     grid-column: 1 / -1;
 }
 
+.booking-modal__check {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.booking-modal__check input {
+    width: 1.05rem;
+    height: 1.05rem;
+    accent-color: var(--accent);
+    flex-shrink: 0;
+}
+
+.booking-modal__check span {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    font-weight: 600;
+}
+
 .booking-modal__actions {
     display: flex;
     justify-content: flex-end;

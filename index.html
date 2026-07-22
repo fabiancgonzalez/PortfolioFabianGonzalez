@@ -477,7 +477,7 @@
                 <div>
                     <p class="section__eyebrow">Agendar consultoría</p>
                     <h2 id="booking-modal-title">Reserva un espacio en mi calendario</h2>
-                    <p class="booking-modal__availability">Consultas disponibles: Lun-Vie · 08:00 a 18:00 · bloques de 30 min</p>
+                    <p class="booking-modal__availability">Consultas disponibles: Lun-Vie · 08:00 a 18:00 · bloques de 30 min · invitación para ambos correos</p>
                 </div>
                 <button class="cert-modal__close" id="close-booking" type="button" aria-label="Cerrar modal">
                     <i class="fas fa-times"></i>
@@ -512,6 +512,10 @@
                 <label class="booking-modal__full">
                     <span>Resumen</span>
                     <textarea id="booking-notes" rows="4" placeholder="Cuéntame brevemente qué quieres automatizar o lanzar." required></textarea>
+                </label>
+                <label class="booking-modal__full booking-modal__check" for="booking-notify-manual">
+                    <input type="checkbox" id="booking-notify-manual">
+                    <span id="booking-notify-manual-label">Notificar también por email manual (resumen para ambos)</span>
                 </label>
             </div>
 

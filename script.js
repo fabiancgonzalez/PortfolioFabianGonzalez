@@ -304,7 +304,7 @@ const applyLanguage = (lang) => {
     setText('.cert-modal .section__eyebrow', isEnglish ? 'Certifications' : 'Certificaciones');
 
     setText('#booking-modal-title', isEnglish ? 'Reserve a spot in my calendar' : 'Reserva un espacio en mi calendario');
-    setText('.booking-modal__availability', isEnglish ? 'Availability: Mon-Fri · 08:00 to 18:00 · 30 minute slots' : 'Consultas disponibles: Lun-Vie · 08:00 a 18:00 · bloques de 30 min');
+    setText('.booking-modal__availability', isEnglish ? 'Availability: Mon-Fri · 08:00 to 18:00 · 30 minute slots · invite sent to both emails' : 'Consultas disponibles: Lun-Vie · 08:00 a 18:00 · bloques de 30 min · invitación para ambos correos');
     const bookingLabels = document.querySelectorAll('.booking-modal__grid label > span');
     setTextAt(bookingLabels, 0, isEnglish ? 'Name' : 'Nombre');
     setTextAt(bookingLabels, 1, isEnglish ? 'Business email' : 'Email de negocios');
@@ -320,6 +320,9 @@ const applyLanguage = (lang) => {
     setTextAt(bookingOptions, 0, isEnglish ? '30 minutes' : '30 minutos');
     setTextAt(bookingOptions, 1, isEnglish ? '45 minutes' : '45 minutos');
     setTextAt(bookingOptions, 2, isEnglish ? '60 minutes' : '60 minutos');
+    setText('#booking-notify-manual-label', isEnglish
+        ? 'Also notify by manual email (summary for both)'
+        : 'Notificar también por email manual (resumen para ambos)');
     setText('#booking-cancel', isEnglish ? 'Cancel' : 'Cancelar');
     setText('#booking-submit', isEnglish ? 'Create event in Google Calendar' : 'Crear evento en Google Calendar');
 
@@ -524,6 +527,7 @@ bookingForm?.addEventListener('submit', (event) => {
     const time = document.getElementById('booking-time')?.value;
     const duration = Number(document.getElementById('booking-duration')?.value || 30);
     const notes = document.getElementById('booking-notes')?.value.trim();
+    const notifyManual = document.getElementById('booking-notify-manual')?.checked;
 
     if (!name || !email || !date || !time || !notes) {
         window.alert(currentLanguage === 'en'
@@ -558,9 +562,22 @@ bookingForm?.addEventListener('submit', (event) => {
 
     const subject = encodeURIComponent(`Consultoría gratuita con ${name}`);
     const details = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nProyecto:\n${notes}`);
-    const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${subject}&dates=${start}/${end}&details=${details}&src=${encodeURIComponent(googleCalendarId)}&ctz=America%2FArgentina%2FBuenos_Aires`;
+    const guests = Array.from(new Set([email, emailTo].map((item) => item.toLowerCase()).filter(Boolean))).join(',');
+    const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${subject}&dates=${start}/${end}&details=${details}&src=${encodeURIComponent(googleCalendarId)}&add=${encodeURIComponent(guests)}&ctz=America%2FArgentina%2FBuenos_Aires`;
 
     window.open(calendarUrl, '_blank', 'noopener,noreferrer');
+
+    if (notifyManual) {
+        const manualSubject = encodeURIComponent(currentLanguage === 'en'
+            ? `Booking summary: ${name}`
+            : `Resumen de agenda: ${name}`);
+        const manualBody = encodeURIComponent(currentLanguage === 'en'
+            ? `Client: ${name}\nClient email: ${email}\nDate: ${date}\nTime: ${time}\nDuration: ${duration} minutes\n\nProject summary:\n${notes}`
+            : `Cliente: ${name}\nEmail cliente: ${email}\nFecha: ${date}\nHora: ${time}\nDuración: ${duration} minutos\n\nResumen del proyecto:\n${notes}`);
+        const manualMailto = `mailto:${emailTo}?cc=${encodeURIComponent(email)}&subject=${manualSubject}&body=${manualBody}`;
+        window.open(manualMailto, '_blank');
+    }
+
     bookingModal?.close();
 });
 
