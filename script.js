@@ -76,8 +76,9 @@ const applyLanguage = (lang) => {
 
     setText('.hero .section__eyebrow', isEnglish ? 'Commercial landing for software services' : 'Landing comercial para servicios de software');
     setText('.hero__copy h1', isEnglish
-        ? 'I build the software that automates your business and multiplies your revenue.'
-        : 'Construyo el software que automatiza tu negocio y multiplica tus ingresos.');
+        ? 'Developing tailored software to automate operations.' 
+        : 'Desarrollo de software a medida para automatizar operaciones.');
+
     setText('.hero__subtitle', isEnglish
         ? 'I develop custom web applications, Micro-SaaS solutions and scalable architectures ready for today’s market.'
         : 'Desarrollo aplicaciones web a medida, soluciones Micro-SaaS y arquitecturas escalables preparadas para el mercado actual.');
@@ -152,7 +153,7 @@ const applyLanguage = (lang) => {
     });
 
     setText('.cases .section__eyebrow', isEnglish ? 'Success cases' : 'Casos de éxito');
-    setText('.cases .section__title', isEnglish ? 'Real products presented as product, not as code.' : 'Productos reales presentados como producto, no como código.');
+setText('.cases .section__title', isEnglish ? 'Functional products. Seamless experiences.' : 'Productos funcionales. Experiencias fluidas.');
     setText('.cases .section__subtitle', isEnglish ? 'Each card shows the screen, context and live demo.' : 'Cada tarjeta muestra pantalla, contexto y demo viva.');
 
     const caseCards = document.querySelectorAll('.case-card');
