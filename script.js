@@ -263,7 +263,7 @@ setText('.cases .section__title', isEnglish ? 'Functional products. Seamless exp
     setText('.why .section__eyebrow', isEnglish ? 'Why work with me' : 'Por qué trabajar conmigo');
     setText('.why .section__title', isEnglish ? 'I turn complex operations into clear, measurable and profitable software.' : 'Transformo operaciones complejas en software claro, medible y rentable.');
     setText('.why .section__subtitle', isEnglish ? 'Technical experience focused on business impact.' : 'Experiencia técnica con foco en impacto de negocio.');
-    setTextAt(document.querySelectorAll('.metric-card strong'), 0, isEnglish ? '+15 suppliers' : '+15 proveedores');
+    setTextAt(document.querySelectorAll('.metric-card strong'), 0, isEnglish ? '+25 suppliers' : '+25 proveedores');
     setTextAt(document.querySelectorAll('.metric-card span'), 0, isEnglish ? 'managed in critical inventory and supply chain systems.' : 'gestionados en sistemas críticos de inventario y cadena de suministro.');
     setTextAt(document.querySelectorAll('.metric-card strong'), 1, isEnglish ? '95% Quality Standards' : '95% Normas de Calidad');
     setTextAt(document.querySelectorAll('.metric-card span'), 1, isEnglish ? 'compliance with international quality standards.' : 'cumplimiento con estándares internacionales de calidad.');
