@@ -171,10 +171,14 @@ ul {
 }
 
 .nav__brand-logo {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     object-fit: contain;
     display: block;
+    border-radius: 0.9rem;
+    padding: 0.2rem;
+    background: rgba(15, 23, 42, 0.55);
+    box-shadow: 0 10px 26px rgba(56, 189, 248, 0.2);
 }
 
 .nav__brand-text {
