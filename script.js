@@ -77,7 +77,7 @@ const applyLanguage = (lang) => {
     setText('.hero .section__eyebrow', isEnglish ? 'Commercial landing for software services' : 'Landing comercial para servicios de software');
     setText('.hero__copy h1', isEnglish
         ? 'Developing tailored software to automate operations.' 
-        : 'Desarrollo de software a medida para automatizar operaciones.');
+        : 'Desarrollo de software a medida.');
 
     setText('.hero__subtitle', isEnglish
         ? 'I develop custom web applications, Micro-SaaS solutions and scalable architectures ready for today’s market.'
